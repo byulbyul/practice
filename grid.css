@@ -1,0 +1,45 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.grid-container01 {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "A B B" "A B B" "A C C";
+}
+
+.A {
+  grid-area: A;
+  background-color: rgba(250, 150, 0, 0.5);
+}
+
+.B {
+  grid-area: B;
+  background-color: rgba(0, 150, 250, 0.5);
+}
+
+.C {
+  grid-area: C;
+  background-color: rgba(250, 100, 100, 0.5);
+  padding: 50px;
+}
+
+.Gallary01 {
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.image-box01 {
+  width: 10vw;
+  height: 10vw;
+  margin: 10px;
+  border-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+}

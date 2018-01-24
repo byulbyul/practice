@@ -6,11 +6,11 @@ body {
 .grid-container01 {
   display: grid;
   width: 100vw;
-  height: 100vh;
+  height: 100vh+auto;
   margin: 0px;
   padding: 0px;
   grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 33vh 33vh 1fr;
   grid-template-areas: "A B B" "A B B" "A C C";
 }
 
@@ -31,9 +31,9 @@ body {
 }
 
 .Gallary01 {
-  align-content: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: 
 }
 
 .image-box01 {

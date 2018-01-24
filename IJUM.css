@@ -25,34 +25,37 @@ p {
   height: 100vh+auto;
   margin: 0px;
   padding: 0px;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "A A B B B B B B"
-  "A A B B B B B B"
-  "A A B B B B B B"
-  "A A B B B B B B"
-  "A A C C C C C C"
-  "A A C C C C C C";
+  "A A B B B B B B B B"
+  "A A B B B B B B B B"
+  "A A B B B B B B B B"
+  "A A B B B B B B B B"
+  "A A C C C C C C C C"
+  "A A C C C C C C C C";
 }
 
 .A {
   grid-area: A;
-  background-color: rgba(250, 150, 0, 0.5);
+  background-color: rgba(250, 150, 0, 0);
+  border-right: solid 2px;
+  border-color: darkgrey;
 }
 
 .B {
   grid-area: B;
-  background-color: rgba(0, 150, 250, 0.5);
+  background-color: rgba(0, 150, 250, 0);
 }
 
 .C {
   grid-area: C;
-  background-color: rgba(250, 100, 100, 0.5);
+  background-color: rgba(250, 100, 100, 0);
   padding: 50px;
 }
 
-/* 메인 그리드 내부 요소 스타일 입니다 */
+/* 아래는 메인 그리드 내부 요소 스타일 입니다. */
+/* 메인 그리드 영역 B의 내부 요소 스타일 입니다. */
 
 .Gallary01 {
   display: flex;
@@ -76,7 +79,6 @@ p {
 
 .B-centering-block-inner {
   display: table-cell;
-  vertical-align: middle;
   text-align: center;
 }
 
@@ -84,18 +86,16 @@ p {
   width: 100%
 }
 
-.image_width_01 {
-  width: 800px;
-  height: auto;
-}
-
-.text_bloc_01 {
+.B-centering-block-inner article {
+  text-align: left;
   background-color: rgba(223, 220, 220, 0.7);
   font-weight: 500;
   color: rgba(80, 40, 20, 1);
   padding-top: 2em;
-  padding-left: 1.5em;
+  padding-left: 3.5em;
   padding-bottom: 2em;
   font-size: 8.5pt;
   line-height: 1.1em;
 }
+
+/* 메인 그리드 영역 C의 내부 요소 스타일 입니다. */

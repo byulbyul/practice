@@ -76,6 +76,7 @@ p {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .B-center-item {
   background-color: rgba(0, 255, 0, 0);
   display: flex;
@@ -88,6 +89,18 @@ p {
 }
 
 .B-center-item article {
+=======
+.B-centering-block-inner {
+  display: table-cell;
+  text-align: center;
+}
+
+.B-centering-block-inner img {
+  width: 100%
+}
+
+.B-centering-block-inner article {
+>>>>>>> parent of 99d7128... b 영역 완성
 =======
 .B-centering-block-inner {
   display: table-cell;
@@ -126,6 +139,7 @@ p {
 /* 메인 그리드 영역 C의 내부 요소 스타일 입니다. */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 .C-centering-box {
   background-color: rgba(255, 0, 0, 0.1);
@@ -151,6 +165,8 @@ p {
   border-color: black;
   background-color: rgba(0, 0, 0, 0.5);
 }
+=======
+>>>>>>> parent of 99d7128... b 영역 완성
 =======
 >>>>>>> parent of 99d7128... b 영역 완성
 =======

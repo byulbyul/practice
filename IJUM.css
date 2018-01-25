@@ -26,13 +26,10 @@ p {
   margin: 0px;
   padding: 0px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 40vh 40vh 1fr;
   grid-template-areas:
   "A A B B B B B B B B"
   "A A B B B B B B B B"
-  "A A B B B B B B B B"
-  "A A B B B B B B B B"
-  "A A C C C C C C C C"
   "A A C C C C C C C C";
 }
 
@@ -45,7 +42,7 @@ p {
 
 .B {
   grid-area: B;
-  background-color: rgba(0, 150, 250, 0.1);
+  background-color: rgba(0, 150, 250, 0);
 }
 
 .C {
@@ -68,13 +65,14 @@ p {
   background-color: rgba(0, 255, 0, 0);
   display: flex;
   flex-flow: column;
+  text-align: center;
 }
 
 .B-center-item img {
-  width: 100%;
+  width: 75%;
 }
 
-.B article {
+.B-center-item article {
   text-align: left;
   background-color: rgba(223, 220, 220, 0.7);
   font-weight: 500;
@@ -102,7 +100,7 @@ p {
 .Gallary01 {
   display: flex;
   flex-direction: row;
-  flex-wrap:
+  flex-wrap: wrap;
 }
 
 .image-box01 {

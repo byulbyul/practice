@@ -33,7 +33,7 @@ body {
 .Gallary01 {
   display: flex;
   flex-direction: row;
-  flex-wrap: 
+  flex-wrap: wrap;
 }
 
 .image-box01 {

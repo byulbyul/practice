@@ -45,7 +45,7 @@ p {
 
 .B {
   grid-area: B;
-  background-color: rgba(0, 150, 250, 0);
+  background-color: rgba(0, 150, 250, 0.1);
 }
 
 .C {
@@ -56,6 +56,48 @@ p {
 
 /* 아래는 메인 그리드 내부 요소 스타일 입니다. */
 /* 메인 그리드 영역 B의 내부 요소 스타일 입니다. */
+
+.B-centering-box {
+  background-color: rgba(255, 0, 0, 0);
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.B-center-item {
+  background-color: rgba(0, 255, 0, 0);
+  display: flex;
+  flex-flow: column;
+}
+
+.B-center-item img {
+  width: 100%;
+}
+
+.B article {
+  text-align: left;
+  background-color: rgba(223, 220, 220, 0.7);
+  font-weight: 500;
+  color: rgba(80, 40, 20, 1);
+  padding-top: 2em;
+  padding-left: 3.5em;
+  padding-bottom: 2em;
+  font-size: 8.5pt;
+  line-height: 1.1em;
+}
+
+/* 메인 그리드 영역 C의 내부 요소 스타일 입니다. */
+
+.C-centering-box {
+  background-color: rgba(255, 0, 0, 0.1);
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.C-center-item {
+  background-color: rgba(0, 0, 255, 0.1);
+}
 
 .Gallary01 {
   display: flex;
@@ -70,32 +112,3 @@ p {
   border-color: black;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-.B-centering-block-outer {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-.B-centering-block-inner {
-  display: table-cell;
-  text-align: center;
-}
-
-.B-centering-block-inner img {
-  width: 100%
-}
-
-.B-centering-block-inner article {
-  text-align: left;
-  background-color: rgba(223, 220, 220, 0.7);
-  font-weight: 500;
-  color: rgba(80, 40, 20, 1);
-  padding-top: 2em;
-  padding-left: 3.5em;
-  padding-bottom: 2em;
-  font-size: 8.5pt;
-  line-height: 1.1em;
-}
-
-/* 메인 그리드 영역 C의 내부 요소 스타일 입니다. */

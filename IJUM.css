@@ -25,34 +25,43 @@ p {
   height: 100vh+auto;
   margin: 0px;
   padding: 0px;
+<<<<<<< HEAD
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 40vh 40vh 1fr;
   grid-template-areas:
   "A A B B B B B B B B"
   "A A B B B B B B B B"
   "A A C C C C C C C C";
+=======
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "A A B B B B B B"
+  "A A B B B B B B"
+  "A A B B B B B B"
+  "A A B B B B B B"
+  "A A C C C C C C"
+  "A A C C C C C C";
+>>>>>>> parent of 1641502... 그리드 영역 B안에 아티클 옮김.
 }
 
 .A {
   grid-area: A;
-  background-color: rgba(250, 150, 0, 0);
-  border-right: solid 2px;
-  border-color: darkgrey;
+  background-color: rgba(250, 150, 0, 0.5);
 }
 
 .B {
   grid-area: B;
-  background-color: rgba(0, 150, 250, 0);
+  background-color: rgba(0, 150, 250, 0.5);
 }
 
 .C {
   grid-area: C;
-  background-color: rgba(250, 100, 100, 0);
+  background-color: rgba(250, 100, 100, 0.5);
   padding: 50px;
 }
 
-/* 아래는 메인 그리드 내부 요소 스타일 입니다. */
-/* 메인 그리드 영역 B의 내부 요소 스타일 입니다. */
+/* 메인 그리드 내부 요소 스타일 입니다 */
 
 .Gallary01 {
   display: flex;
@@ -129,6 +138,7 @@ p {
 =======
 .B-centering-block-inner {
   display: table-cell;
+  vertical-align: middle;
   text-align: center;
 }
 
@@ -136,18 +146,28 @@ p {
   width: 100%
 }
 
+<<<<<<< HEAD
 .B-centering-block-inner article {
 >>>>>>> parent of 99d7128... b 영역 완성
   text-align: left;
+=======
+.image_width_01 {
+  width: 800px;
+  height: auto;
+}
+
+.text_bloc_01 {
+>>>>>>> parent of 1641502... 그리드 영역 B안에 아티클 옮김.
   background-color: rgba(223, 220, 220, 0.7);
   font-weight: 500;
   color: rgba(80, 40, 20, 1);
   padding-top: 2em;
-  padding-left: 3.5em;
+  padding-left: 1.5em;
   padding-bottom: 2em;
   font-size: 8.5pt;
   line-height: 1.1em;
 }
+<<<<<<< HEAD
 
 /* 메인 그리드 영역 C의 내부 요소 스타일 입니다. */
 <<<<<<< HEAD
@@ -187,3 +207,5 @@ p {
 >>>>>>> parent of 99d7128... b 영역 완성
 =======
 >>>>>>> parent of 99d7128... b 영역 완성
+=======
+>>>>>>> parent of 1641502... 그리드 영역 B안에 아티클 옮김.

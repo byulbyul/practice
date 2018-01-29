@@ -19,7 +19,7 @@ p {
 
 /* 메인 그리드 영역 스타일 입니다. */
 
-.grid-container01 {
+.main-container01 {
   display: grid;
   width: 100vw;
   height: 100vh*auto;
@@ -55,6 +55,33 @@ p {
 
 /* 메인 그리드 내부 요소 스타일 입니다 */
 /* 메인 그리드 영역 A의 내부 요소 스타일 입니다. */
+
+.A-menu {
+  display: flex;
+  flex-flow: column;
+  padding: 5px 25px 0 25px;
+
+}
+
+.A-menu-item {
+  border-width: 1px 0 1px 0;
+  border-style: solid;
+  border-color: darkgrey;
+  padding: 2px 0 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.A-menu-item p{
+  font-size: 10px;
+}
+
+.imgbox01 {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
 
 /* 메인 그리드 영역 B의 내부 요소 스타일 입니다. */
 
@@ -98,4 +125,34 @@ p {
 
 .C-center-item {
   background-color: rgba(0, 0, 255, 0.1);
+}
+
+@media screen and (max-width: 450px) {
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  .main-container01 {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .A {
+    border-right: 0px;
+    margin: 20px;
+
+  }
+
+  .B {
+    margin: 15px;
+  }
+
+  .C {
+    margin: 15px;
+  }
+
+
 }
